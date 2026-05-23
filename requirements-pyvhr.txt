@@ -1,0 +1,22 @@
+# Optional pyVHR baseline comparison dependencies.
+# Install after requirements.txt when you want to use `--run-pyvhr`.
+# pyVHR is a research framework and may be slow/heavy to install on WSL-mounted Windows folders.
+pyvhr-cpu==1.0.2
+# pyVHR 1.0.2 expects the legacy mediapipe.solutions API.
+mediapipe==0.10.21
+numba>=0.65
+scikit-image>=0.26
+scikit-learn>=1.8
+plotly>=6.7
+tqdm>=4.67
+biosppy>=2.2
+lmfit>=1.3
+autorank>=1.3
+scikit-posthocs>=0.13
+PySimpleGUI>=6.0
+ipywidgets>=8.1
+requests>=2.34
+opencv-contrib-python==4.11.0.86
+# pyVHR imports face-parsing modules even when using convexhull ROI.
+# Install CPU wheels separately to avoid downloading CUDA wheels:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
