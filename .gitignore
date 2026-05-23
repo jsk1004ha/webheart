@@ -4,3 +4,5 @@ __pycache__/
 outputs/session_*/
 .omx/logs/
 .DS_Store
+
+.omx/
